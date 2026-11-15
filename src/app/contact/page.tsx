@@ -10,7 +10,7 @@ import HeroArt from "@/components/HeroArt";
 export const metadata: Metadata = {
   title: "Contact Webtics Digital | Free Website Audit or Book a Call",
   description:
-    "Get a free website audit or book a call with Webtics Digital. Web design, SEO, dashboards and automation for UK small businesses. We reply within one working day.",
+    "Get a free website audit or book a call with Webtics Digital. Web design, SEO, care plans and dashboards for UK small businesses. We reply within one working day.",
   alternates: { canonical: "/contact" },
 };
 

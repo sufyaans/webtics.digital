@@ -18,7 +18,7 @@ import { Ph } from "@/components/Placeholder";
 export const metadata: Metadata = {
   title: "Web Design for Small Businesses UK | Webtics Digital",
   description:
-    "Websites, SEO, dashboards and automation for UK small businesses, built by a web designer who is also a data engineer. Get a free website audit.",
+    "Websites, SEO, care plans and dashboards for UK small businesses, built by a web designer who is also a data engineer. Get a free website audit.",
   alternates: { canonical: "/" },
 };
 
@@ -54,7 +54,7 @@ export default function Home() {
         <GlyphField />
         <div className="wrap home-hero-inner relative flex flex-1 flex-col items-center justify-center text-center">
           <p className="eyebrow fade-in rounded-full bg-paper/70 px-4 py-2 text-scarlet-deep shadow-[0_0_0_1px_var(--color-line)] backdrop-blur-sm" style={{ ["--d" as string]: "0.1s" }}>
-            Web design · SEO · Data · Automation
+            Web design · SEO · Care · Data · Apps
           </p>
 
           <h1 className="hero-title">
@@ -76,7 +76,7 @@ export default function Home() {
           </h1>
 
           <p className="page-hero-lede fade-in max-w-xl text-ink/80" style={{ ["--d" as string]: "0.45s" }}>
-            Fast, custom websites for UK small businesses, wired up to tracking, dashboards and automation. So you can
+            Fast, custom websites for UK small businesses, wired up to tracking and dashboards. So you can
             see what is working, not just hope it is.
           </p>
           <div className="page-hero-actions fade-in items-center justify-center" style={{ ["--d" as string]: "0.55s" }}>

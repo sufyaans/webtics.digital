@@ -143,7 +143,7 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
         </div>
       </section>
 
-      {/* Data visual on the data and automation pages */}
+      {/* Data visual on the data page */}
       {s.slug === "data-dashboards" && (
         <section className="on-ink relative z-10 bg-ink py-20 text-paper md:py-28">
           <div className="wrap grid gap-12 lg:grid-cols-12">
@@ -311,7 +311,7 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                 </Link>
               </p>
             </div>
-            <Packages items={packages[s.slug]} service={s.name} />
+            <Packages items={packages[s.slug]} service={s.name} slug={s.slug} />
           </div>
         </section>
       )}

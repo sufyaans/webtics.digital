@@ -92,7 +92,7 @@ export default function AboutPage() {
               </div>
               <div>
                 <p className="eyebrow text-stone">Back</p>
-                <p className="mt-3 text-paper/85">Tracking, dashboards, automation and integrations, built to the standard of a professional data platform.</p>
+                <p className="mt-3 text-paper/85">Tracking, dashboards and integrations, built to the standard of a professional data platform.</p>
               </div>
             </div>
           </div>

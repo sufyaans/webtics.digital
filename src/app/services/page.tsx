@@ -8,7 +8,7 @@ import HeroArt from "@/components/HeroArt";
 export const metadata: Metadata = {
   title: "Digital Services for Small Businesses | Webtics Digital",
   description:
-    "Web design, SEO, website care plans, Power BI dashboards, automation and app development for UK small businesses. One partner for the front and the back.",
+    "Web design, SEO, website care plans, Power BI dashboards and app development for UK small businesses. One partner for the front and the back.",
   alternates: { canonical: "/services" },
 };
 
@@ -23,10 +23,10 @@ export default function ServicesPage() {
         eyebrow="Services"
         art={<HeroArt name="services" />}
         title={"Everything your website needs.\nAnd everything behind it."}
-        lede="Six services, one small senior team. Pick one, or let us join them up: a website that ranks, tracking that counts every enquiry, and the dashboards and automations that save you time."
+        lede={`${services.length} services, one small senior team. Pick one, or let us join them up: a website that ranks, tracking that counts every enquiry, and the dashboards that show you how the business is doing.`}
         aside={
           <>
-            <span className="numeral block text-3xl text-ink">06</span>
+            <span className="numeral block text-3xl text-ink">{String(services.length).padStart(2, "0")}</span>
             services, from the page your customers see to the data you run the business on.
           </>
         }

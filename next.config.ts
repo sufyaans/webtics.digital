@@ -56,6 +56,9 @@ const nextConfig: NextConfig = {
       { source: "/website-hosting", destination: "/services/website-care-plans", permanent: true },
       { source: "/branding", destination: "/services", permanent: true },
       { source: "/feed", destination: "/blog", permanent: true },
+      // hidden for now: temporary redirects, so they can be brought back later
+      { source: "/services/automation-chatbots", destination: "/services", permanent: false },
+      { source: "/blog/five-things-to-automate-with-whatsapp", destination: "/blog", permanent: false },
     ];
   },
 };

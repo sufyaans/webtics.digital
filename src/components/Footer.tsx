@@ -17,7 +17,7 @@ export default function Footer() {
             <Wordmark tone="dark" className="text-3xl" />
             <p className="mt-6 max-w-sm font-display text-2xl leading-snug text-paper/90">{site.tagline}</p>
             <p className="mt-6 max-w-sm text-sm text-paper/70">
-              Web design, SEO, data and automation for UK small businesses. Based in {site.city}.
+              Web design, SEO, data and apps for UK small businesses. Based in {site.city}.
             </p>
           </div>
 

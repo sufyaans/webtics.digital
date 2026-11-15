@@ -8,7 +8,7 @@ import HeroArt from "@/components/HeroArt";
 export const metadata: Metadata = {
   title: "Case Studies | Small Business Websites and Dashboards | Webtics Digital",
   description:
-    "Real projects for UK small businesses: websites, SEO, care plans, dashboards and automation. See the challenge, the approach and the results.",
+    "Real projects for UK small businesses: websites, SEO, care plans and dashboards. See the challenge, the approach and the results.",
   alternates: { canonical: "/work" },
 };
 

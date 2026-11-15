@@ -17,9 +17,11 @@ export type Service = {
   faqs: { q: string; a: string }[];
   relatedPosts: string[];
   ctaTitle: string;
+  /** Hidden services stay in this file but appear nowhere on the site */
+  hidden?: boolean;
 };
 
-export const services: Service[] = [
+const allServices: Service[] = [
   {
     slug: "web-design",
     no: "01",
@@ -225,6 +227,10 @@ export const services: Service[] = [
     tools: ["Power BI", "SQL Server", "Azure", "Databricks", "Excel", "GA4"],
     faqs: [
       {
+        q: "How much does a dashboard cost?",
+        a: "There are two parts. A one-off set-up fee from £495 covers connecting your data and building the dashboard. Managed reporting, from £125 a month per user, keeps it hosted, refreshed and supported. It is part of every dashboard, because it is what keeps the reports arriving.",
+      },
+      {
         q: "Do I need a Power BI licence?",
         a: "Usually you need Power BI Pro for each person who views shared dashboards. We will advise on the cheapest set-up for your team before we start.",
       },
@@ -242,6 +248,7 @@ export const services: Service[] = [
   },
   {
     slug: "automation-chatbots",
+    hidden: true, // hidden for now at Sufyaan's request: set to false to bring it back
     no: "05",
     name: "Automation and chatbots",
     short: "WhatsApp bots and automations that take the busywork off you.",
@@ -341,5 +348,8 @@ export const services: Service[] = [
     ctaTitle: "Got a process that needs its own tool?",
   },
 ];
+
+/** The services shown on the site, numbered in order (01, 02, ...) */
+export const services: Service[] = allServices.filter((s) => !s.hidden).map((s, i) => ({ ...s, no: String(i + 1).padStart(2, "0") }));
 
 export const getService = (slug: string) => services.find((s) => s.slug === slug);
