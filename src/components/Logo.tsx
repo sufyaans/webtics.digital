@@ -62,6 +62,15 @@ export function LogoHorizontal({ tone = "light", className = "" }: { tone?: "lig
   );
 }
 
+/** Full lockup (emblem + wordmark in one image). On navy it sits on an off-white tile so the navy strands stay visible. */
+export function LogoFull({ onDark = false, className = "" }: { onDark?: boolean; className?: string }) {
+  const img = (
+    <Image src="/brand/webtics-logo-full.webp" alt="Webtics Digital" width={1000} height={231} sizes="220px" priority className="h-full w-auto" />
+  );
+  if (!onDark) return <span className={`inline-flex ${className}`}>{img}</span>;
+  return <span className={`inline-flex rounded-lg bg-paper px-3 py-1.5 ${className}`}>{img}</span>;
+}
+
 export function LogoStacked({ tone = "light", className = "" }: { tone?: "light" | "dark"; className?: string }) {
   return (
     <span className={`inline-flex flex-col items-center gap-3 ${className}`}>

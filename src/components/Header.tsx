@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { LogoHorizontal } from "./Logo";
+import { LogoFull } from "./Logo";
 import { nav } from "@/lib/site";
 
 export default function Header() {
@@ -41,10 +41,8 @@ export default function Header() {
       } ${open ? "bg-ink" : ""}`}
     >
       <div className="wrap flex items-center justify-between gap-6">
-        <Link href="/" aria-label="Webtics Digital home" className="relative z-10 text-[1.15rem] md:text-[1.3rem]">
-          <span style={{ ["--mark-bg" as string]: open ? "#03203D" : "#FAF8F4" }}>
-            <LogoHorizontal tone={open ? "dark" : "light"} />
-          </span>
+        <Link href="/" aria-label="Webtics Digital home" className="relative z-10">
+          <LogoFull onDark={open} className={`transition-[height] duration-500 ${scrolled && !open ? "h-10 md:h-10" : "h-12 md:h-12"}`} />
         </Link>
 
         <nav aria-label="Main" className="hidden lg:block">
