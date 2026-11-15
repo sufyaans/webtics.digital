@@ -3,7 +3,6 @@ import Link from "next/link";
 import { services } from "@/content/services";
 import { testimonials } from "@/content/testimonials";
 import { Arrow, Eyebrow, FinalCta, PageHero } from "@/components/Blocks";
-import Lazy3D from "@/components/three/Lazy3D";
 import HeroArt from "@/components/HeroArt";
 
 export const metadata: Metadata = {
@@ -33,17 +32,6 @@ export default function ServicesPage() {
           </>
         }
       />
-
-      <section className="relative z-10 pb-10">
-        <div className="wrap">
-          <Lazy3D
-            scene="data-field"
-            className="aspect-[16/9] w-full overflow-hidden rounded-2xl bg-stone-tint md:aspect-[21/8]"
-            fallback={<div className="h-full w-full bg-[repeating-linear-gradient(90deg,transparent_0_22px,rgba(99,156,197,0.25)_22px_30px)]" />}
-          />
-          <p className="mt-3 text-xs text-muted">Illustration: your business data, in motion. Move your pointer across it.</p>
-        </div>
-      </section>
 
       <section className="relative z-10 py-10" aria-label="What a client says">
         <div className="wrap flex flex-col gap-4 border-y border-line py-8 md:flex-row md:items-center md:justify-between">

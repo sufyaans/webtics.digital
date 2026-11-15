@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { services, getService } from "@/content/services";
 import { getPosts, getCaseStudies } from "@/lib/content";
 import { Arrow, Eyebrow, FinalCta, JsonLd, PageHero, Rule } from "@/components/Blocks";
-import Lazy3D from "@/components/three/Lazy3D";
+import CareMonitor from "@/components/CareMonitor";
+import DashboardPreview from "@/components/DashboardPreview";
 import XRay from "@/components/XRay";
 import { site } from "@/lib/site";
 import { packages } from "@/content/packages";
@@ -170,13 +171,8 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                 What you get.
               </h2>
             </div>
-            {s.side === "back" && (
-              <Lazy3D
-                scene="data-field"
-                className="aspect-[16/9] overflow-hidden rounded-2xl bg-stone-tint lg:col-span-8"
-                fallback={<div className="h-full w-full bg-stone-tint" />}
-              />
-            )}
+            {s.slug === "website-care-plans" && <CareMonitor />}
+            {s.slug === "data-dashboards" && <DashboardPreview />}
           </div>
           <div className="mt-14 grid gap-px overflow-hidden rounded-2xl bg-line sm:grid-cols-2 lg:grid-cols-3">
             {s.included.map((it, i) => (

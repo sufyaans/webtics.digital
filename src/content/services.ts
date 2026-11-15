@@ -36,7 +36,7 @@ const allServices: Service[] = [
     lede: "A website should bring in work. Ours are designed around one job: turning the right visitors into enquiries, then showing you exactly where they came from.",
     intro: [
       "Most small business websites look fine and do very little. They load slowly, say the same thing as every competitor and give you no idea whether anyone is using them.",
-      "We start with what the site needs to achieve, who it is for and what they search for. Then we design and build it from scratch, in modern code with no plugin pile to patch every month.",
+      "We start with what the site needs to achieve, who it is for and what they search for. Then we recommend the platform that fits best, whether that's WordPress with Elementor or a fully custom build, and design and build it around your brand.",
       "Every site we launch has tracking set up from day one. You will know how many people visited, what they did and which pages bring in enquiries.",
     ],
     signs: [
@@ -48,7 +48,7 @@ const allServices: Service[] = [
     included: [
       { title: "Strategy and structure", body: "Keyword research, a page plan and a clear route from landing to enquiry." },
       { title: "Custom design", body: "Designed for your brand and your customers, not adapted from a template." },
-      { title: "Fast, secure build", body: "Modern code, strong security headers and no plugins to patch. Built to pass Core Web Vitals." },
+      { title: "Fast, secure build", body: "Built on the right platform for your project, hardened and kept lean. Built to pass Core Web Vitals." },
       { title: "SEO foundations", body: "Clean URLs, structured data, metadata, sitemaps and redirects from your old site." },
       { title: "Tracking from day one", body: "GA4, Search Console and conversion events for every form and call button." },
       { title: "Easy editing", body: "Update text, posts and case studies yourself through a simple editor." },
@@ -76,7 +76,7 @@ const allServices: Service[] = [
       },
       {
         q: "Do you use WordPress?",
-        a: "Not by default. We build on a modern stack with no plugins to patch, which is faster and far harder to hack. If you have a strong reason to stay on WordPress, we will talk it through.",
+        a: "Where it's the right fit. We talk through what you need first, then recommend whichever is most cost-effective: WordPress with Elementor for a lot of small business sites, or a fully custom build when you need something more bespoke.",
       },
     ],
     relatedPosts: ["how-much-does-a-small-business-website-cost-uk"],
@@ -177,7 +177,7 @@ const allServices: Service[] = [
       { q: "How much is a care plan?", a: "Hosting, with a domain and three business email accounts, is £10 a month. Care plans that add monitoring, backups and updates start from £39 a month. The packages on this page show what each one includes." },
       {
         q: "What happens if my site gets hacked?",
-        a: "Our builds have no database or plugins to exploit, which removes the most common attack routes. If anything does go wrong, we restore from backup and investigate as part of your plan.",
+        a: "We harden and keep your platform updated, which closes off the most common attack routes. If anything does go wrong, we restore from backup and investigate as part of your plan.",
       },
     ],
     relatedPosts: ["website-care-plan-is-it-worth-it"],
