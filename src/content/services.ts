@@ -36,7 +36,7 @@ const allServices: Service[] = [
     lede: "A website should bring in work. Ours are designed around one job: turning the right visitors into enquiries, then showing you exactly where they came from.",
     intro: [
       "Most small business websites look fine and do very little. They load slowly, say the same thing as every competitor and give you no idea whether anyone is using them.",
-      "We start with what the site needs to achieve, who it is for and what they search for. Then we design and build it from scratch. No themes, no page builders, no plugin pile to patch every month.",
+      "We start with what the site needs to achieve, who it is for and what they search for. Then we design and build it from scratch, in modern code with no plugin pile to patch every month.",
       "Every site we launch has tracking set up from day one. You will know how many people visited, what they did and which pages bring in enquiries.",
     ],
     signs: [
@@ -64,7 +64,7 @@ const allServices: Service[] = [
     faqs: [
       {
         q: "How long does a new website take?",
-        a: "Most small business sites take four to eight weeks from kick-off to launch. It depends on the number of pages and how quickly content and feedback come back. [TIMELINE TO CONFIRM]",
+        a: "Most small business sites take four to eight weeks from kick-off to launch. It depends on the number of pages and how quickly content and feedback come back.",
       },
       {
         q: "Will I lose my Google rankings if I redesign?",
@@ -128,10 +128,6 @@ const allServices: Service[] = [
         q: "Do you guarantee rankings?",
         a: "No, and nobody honest can. Google decides rankings. What we guarantee is clear work, clear reporting and no wasted spend.",
       },
-      {
-        q: "Is there a minimum contract?",
-        a: "[CONTRACT TERMS TO CONFIRM]",
-      },
     ],
     relatedPosts: ["is-your-website-hurting-your-seo"],
     ctaTitle: "See what is holding your rankings back.",
@@ -142,7 +138,7 @@ const allServices: Service[] = [
     name: "Website care plans",
     short: "Hosting, updates, security and support, handled.",
     side: "back",
-    metaTitle: "Website Care Plans UK | Maintenance and Hosting | Webtics Digital",
+    metaTitle: "Website Care Plans and Hosting UK | Webtics Digital",
     metaDescription:
       "Website care plans for UK small businesses: secure hosting, backups, monitoring, content updates and a monthly health report. No surprise bills.",
     primaryKeyword: "website care plan UK",
@@ -164,7 +160,7 @@ const allServices: Service[] = [
       { title: "Backups", body: "Versioned backups, so any change can be rolled back." },
       { title: "Content updates", body: "Text, images and small page changes, within your plan's hours." },
       { title: "Monthly health report", body: "Visits, enquiries, speed and anything we fixed." },
-      { title: "Priority support", body: "A real person to email, not a ticket queue." },
+      { title: "Priority support", body: "A real person who answers your email." },
     ],
     process: [
       { title: "Onboard", body: "We take over hosting, domains and access safely." },
@@ -310,7 +306,7 @@ const allServices: Service[] = [
     h1: "App development for small businesses.",
     lede: "Booking systems, client portals, quoting tools and internal dashboards. When off-the-shelf software does not fit, we build something that does, without enterprise prices.",
     intro: [
-      "Sometimes the right answer is not another subscription. It is a small, focused tool built around exactly how your business works.",
+      "Sometimes a small, focused tool built around exactly how your business works beats another subscription with features you will never touch.",
       "We design and build web apps that work on any device, keep your data secure and can grow with you. We start small, ship early and improve from real use.",
     ],
     signs: [
@@ -337,7 +333,7 @@ const allServices: Service[] = [
     faqs: [
       {
         q: "Do you build iPhone and Android apps?",
-        a: "We focus on web apps that work on every device and can be installed on a phone's home screen. If you need a native app store app, we will tell you honestly and can recommend a partner. [CONFIRM SCOPE]",
+        a: "We focus on web apps that work on every device and can be installed on a phone's home screen. If you need a native app store app, we will tell you honestly and can recommend a partner.",
       },
       {
         q: "Who owns the code?",

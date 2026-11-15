@@ -91,7 +91,6 @@ export default async function CasePage(props: PageProps<"/work/[slug]">) {
               {[
                 ["Client", c.client],
                 ["Sector", c.sector],
-                ["Timeline", c.timeline],
                 ["Year", c.year],
               ].map(([k, v]) => (
                 <div key={k} className="py-4">

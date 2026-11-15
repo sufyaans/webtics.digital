@@ -10,16 +10,16 @@ const PHOTO = "/brand/sufyaan-cutout.png"; // cut-out of public/brand/sufyaan.jp
 const hasPhoto = fs.existsSync(path.join(process.cwd(), "public", PHOTO));
 
 export const metadata: Metadata = {
-  title: "About Webtics Digital | Web Designer and Data Engineer, Leicester",
+  title: "Web Designer and Data Engineer, Leicester | Webtics Digital",
   description:
-    "Webtics Digital is a small, senior studio in Leicester. Founder Sufyaan Seedat is a web designer and working data engineer helping UK small businesses grow.",
+    "I'm Sufyaan: a web designer who is also a working data engineer. See how that shapes every Webtics website, and get a free audit to see yours.",
   alternates: { canonical: "/about" },
 };
 
 const values = [
   { title: "Proof before claims", body: "We show the numbers. If we cannot measure it, we say so." },
-  { title: "Plain English", body: "No jargon, no smoke. You will always understand what we are doing and why." },
-  { title: "Small and senior", body: "You work with the person doing the work. No account managers, no hand-offs." },
+  { title: "Plain English", body: "We say what we mean, in words you would use yourself. You will always understand what we are doing and why." },
+  { title: "Small and senior", body: "You work with the person doing the work, from the first call to the last invoice." },
   { title: "Built to last", body: "Secure, low-maintenance builds you own outright, and care that continues after launch." },
 ];
 
@@ -29,8 +29,8 @@ export default function AboutPage() {
       <PageHero
         crumbs={[{ label: "About" }]}
         eyebrow="About Webtics"
-        title={"A web studio\nwith a data\nengineer's brain."}
-        lede="Webtics Digital is a small, hands-on studio based in Leicester. We build websites for UK small businesses, and we connect them to the numbers that show whether they are working."
+        title={"I design websites.\nBy day, I build\ndata platforms."}
+        lede="Webtics Digital is me: a web designer in Leicester who also works as a data engineer. I build your website, then connect it to the numbers that show whether it's working, using the same tools I use in my day job: Databricks, SQL Server, Power BI and Azure."
         art={
           hasPhoto ? (
             <GlyphImage src={PHOTO} mode="portrait" cell={4.4} label="Portrait of Sufyaan Seedat, founder of Webtics Digital, drawn in characters" />
@@ -60,8 +60,8 @@ export default function AboutPage() {
                 moved on to the next launch.
               </p>
               <p>
-                Webtics is the opposite of that. Every site is built to be fast, secure and easy to update, and every
-                one is measured from day one. When something needs fixing, you speak to me.
+                At Webtics, every site is measured from day one, built to be fast, secure and easy to update, and
+                looked after once it's live. When something needs fixing, you speak to me, not a help desk.
               </p>
               <p>
                 I&apos;m based in Leicester, but the work travels. Webtics clients are in the UK, Malawi, South

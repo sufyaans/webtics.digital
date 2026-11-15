@@ -81,7 +81,6 @@ export type CaseMeta = {
   services: string[];
   summary: string;
   result: string;
-  timeline: string;
   tools: string[];
   year: string;
   order: number;

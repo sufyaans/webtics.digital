@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { services } from "@/content/services";
+import { testimonials } from "@/content/testimonials";
 import { Arrow, Eyebrow, FinalCta, PageHero } from "@/components/Blocks";
 import Lazy3D from "@/components/three/Lazy3D";
 import HeroArt from "@/components/HeroArt";
 
 export const metadata: Metadata = {
-  title: "Digital Services for Small Businesses | Webtics Digital",
+  title: "Web Design, SEO and Data Services | Webtics Digital",
   description:
-    "Web design, SEO, website care plans, Power BI dashboards and app development for UK small businesses. One partner for the front and the back.",
+    "Web design, SEO, care plans, dashboards and app development for UK small businesses, run by one small, senior team. Get a free website audit.",
   alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {
   const front = services.filter((s) => s.side === "front");
   const back = services.filter((s) => s.side === "back");
+  const [proof] = testimonials;
 
   return (
     <>
@@ -22,8 +24,8 @@ export default function ServicesPage() {
         crumbs={[{ label: "Services" }]}
         eyebrow="Services"
         art={<HeroArt name="services" />}
-        title={"Everything your website needs.\nAnd everything behind it."}
-        lede={`${services.length} services, one small senior team. Pick one, or let us join them up: a website that ranks, tracking that counts every enquiry, and the dashboards that show you how the business is doing.`}
+        title={"The website your customers see.\nThe data that shows it's working."}
+        lede={`${services.length} services for UK small businesses, run by one small, senior team: a website that ranks, tracking that counts every enquiry, and the dashboards that show whether it's working.`}
         aside={
           <>
             <span className="numeral block text-3xl text-ink">{String(services.length).padStart(2, "0")}</span>
@@ -40,6 +42,21 @@ export default function ServicesPage() {
             fallback={<div className="h-full w-full bg-[repeating-linear-gradient(90deg,transparent_0_22px,rgba(99,156,197,0.25)_22px_30px)]" />}
           />
           <p className="mt-3 text-xs text-muted">Illustration: your business data, in motion. Move your pointer across it.</p>
+        </div>
+      </section>
+
+      <section className="relative z-10 py-10" aria-label="What a client says">
+        <div className="wrap flex flex-col gap-4 border-y border-line py-8 md:flex-row md:items-center md:justify-between">
+          <blockquote className="h3-serif max-w-2xl !text-2xl">&ldquo;{proof.pull}&rdquo;</blockquote>
+          <div className="flex shrink-0 items-center gap-4">
+            <p className="text-sm text-muted">
+              {proof.name}
+              {proof.company && <>, {proof.company}</>}
+            </p>
+            <Link href="/work" className="btn btn-ghost !min-h-0 !px-4 !py-2 text-sm">
+              See the work <Arrow />
+            </Link>
+          </div>
         </div>
       </section>
 
